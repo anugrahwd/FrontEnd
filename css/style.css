@@ -4,94 +4,35 @@
     padding: 0px;
 }
 
-body {
+body {    
     margin: 0px;
     padding: 0px;
     font-family: 'Open Sans', sans-serif;
 }
 
-.wrapper{
-    width: 1100px;
-    margin: auto;
-    position: relative;
-}
-
 .logo img{
     margin: 0;
-    width: 8%;
+    width: 6%;
     float: left;
 }
 
-.menu {
-    float: right;
-
-}
-
-nav {
-
-    height: 100%;
-    width: 100%;
-    margin: auto;
-    display: flex;
-    line-height: 80px;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    background: #ffffff;
-    z-index: 1;
-    
-
-}
-
-nav ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-nav ul li{
+#search-icon{
     float: left;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-nav ul li a{
-    color: black;
-    font-weight: bold;
-    text-align: center;
+#search-bar{
+    margin-left: 20px;
+    border: none;
+    outline: none;
+    background: none;
+    float: left;
+    background-color: #e4e5e6;
+    border-radius: 50px;
     padding: 0px 16px 0px 16px;
-    text-decoration: none;
-}
-
-nav ul li a:hover{
-    text-decoration: underline;
-}
-
-section{
-    margin: auto;
-    display: flex;
-    margin-bottom: 50px;
-}
-
-.kolom{
-    margin-top: 60px;
-    margin-bottom: 50px;
-}
-
-.kolom .deskripsi{
-    font-size: 20px;
-    font-weight: bold;
-    font-family: 'comic sans ms';
-    color: #364f6b;
-}
-
-h2{
-    font-family: 'comic sans ms';
-    font-weight: 800;
-    font-size: 45px;
-    margin-bottom: 20px;
-    color: #364f6b;
-    width: 100%;
-    line-height: 50px;
+    height: 40px;
+    margin-top: 20px;
 }
 
 a.tbl-biru{
@@ -124,6 +65,187 @@ a.tbl-pink:hover{
     text-decoration: none;
 }
 
+section{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrapper{
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+.menu {
+    float: right;
+}
+
+nav {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: white;
+    z-index: 1;
+    box-shadow: 0px 1px 8px gainsboro;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li{
+    float: left;
+}
+
+nav ul li a{
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    font-weight: 800;
+}
+
+nav ul li a:active{
+    font-weight: 900;
+}
+
+#Home{
+    background-color: #ffffff;
+}
+
+#Home img{
+    width: 90%;
+}
+
+#Home .kolom .deskripsi{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'comic sans ms';
+    color: #364f6b;
+    margin-bottom: 30px;
+}
+
+.kolom .deskripsi{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'comic sans ms';
+    color: #364f6b;
+    margin-bottom: 30px;
+}
+
+.kolom p{
+    font-weight: 300;
+}
+
+h2{
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #364f6b;
+    width: 100%;
+    line-height: 50px;
+}
+
+#Cources{
+    background-color:#ffffff;
+    display: block;
+    height: max-content;
+}
+
+#Cources .deskripsi{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'comic sans ms';
+    color: #364f6b;
+    padding-top: 120px;
+    margin-bottom: 10px;
+    text-align: center;
+    display: block;
+}
+
+#Cources .kolom{
+    display: block;
+}
+
+#Cources h2{
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 45px;
+    color: #364f6b;
+    width: 100%;
+    line-height: 50px;
+}
+
+#Cources img{
+    width: 60%;
+    float: right;
+    margin: auto;
+}
+
+.artikel-desc{
+    display:block;
+    border:none;
+    box-shadow: 0px 1px 4px;
+    padding: 20px;
+    margin-bottom: 5px;
+}
+
+.artikel-desc:hover{
+    display:block;
+    box-shadow: 2px 5px 6px;
+    padding: 21px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.artikel-desc h4{
+    font-size: 27px;
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+.artikel-desc p{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.artikel-cont{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.artikel-desc a{
+    font-family: 'comic sans ms';
+    color:#6fb2ff;
+}
+
+.artikel-desc a:hover{
+    color:#8fc3ff;
+}
+
+#more{
+    margin-top: 20px;
+    position: static;
+}
+
 p{
     margin: 10px 0px 10px 0px;
     padding: 10px 0px 10px 0px;
@@ -138,6 +260,20 @@ p{
     width: 100%;
 }
 
+#doctor{
+    padding-top: 220px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+}
+
+#member{
+    padding-top: 80px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+}
+
 .doctor-list{
     width: 100%;
     position: relative;
@@ -146,13 +282,14 @@ p{
 }
 
 .kartu-doctor{
-    width: 20%;
-    margin: 0 auto;
+    width: 30%;
+    margin: 20px auto;
 }
 
 .kartu-doctor img{
     width: 80%;
     border-radius: 50%;
+    margin: auto;
 }
 
 .kartu-doctor p{
@@ -177,6 +314,7 @@ p{
 .kartu-partner img{
     width: 80%;
     border-radius: 50%;
+    margin: auto;
 }
 
 #contact{
@@ -227,6 +365,7 @@ h3{
     margin-top: auto;
 
 }
+
 .btn-floating{
     position: fixed;
     right: 30px;
@@ -274,30 +413,17 @@ h3{
     background-color: #3f72af;
 }
 
-input{
-    border: none;
-    outline: none;
-    background: none;
-    float: left;
-    background-color: #e4e5e6;
-    border-radius: 50px;
-    padding: 0px 16px 0px 16px;
-    height: 40px;
-    margin-top: 20px;
-}
-
-
 
 @media screen and (max-width : 991.98px) {
     .wrapper{
         width: 90%;
     }
     .logo img{
-        display: block;
-        width: 20%;
-        margin-left: auto;
-        margin-right: auto;
-        float: none;
+        display:inline-block;
+        width: 5em;
+        margin-left: 5px;
+        margin-top: auto;
+        margin-bottom: auto;
     }
 
     nav .menu{
@@ -326,29 +452,47 @@ input{
         height: auto;
     }
 
+    #Cources .kolom{
+        display: block;
+        margin-bottom: 50px;
+    }
+
+    #Cources img{
+        width: 80%;
+        display: block;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #doctor{
+        height: max-content;
+        padding-bottom: 10px;
+    }
+
+    #member{
+        height: max-content;
+        padding-bottom: 10px;
+    }
+
     .kartu-doctor{
-        width: 50%;
+        width: 30%;
+    }
+
+    .kartu-doctor p{
+        font-weight: 800;
+        font-size: 20px;
+    }
+
+    #Partners{
+        height: max-content;
+        margin-top: 25px;
+        padding-bottom: 10px;
     }
 
     .kartu-partner{
-        width: 50%;
+        width: 30%;
+        margin-bottom: 20px;
     }
 }
 
-.container{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-h1{
-    color: #0d0d0e;
-    margin-bottom: 40px;
-}
-iframe{
-    width: 60%;
-    height: 300px;
-    filter: invert(100%);
-}
