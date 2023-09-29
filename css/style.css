@@ -161,28 +161,28 @@ h2{
     line-height: 50px;
 }
 
-#Cources{
+#info{
     background-color:#ffffff;
     display: block;
     height: max-content;
 }
 
-#Cources .deskripsi{
+#info .deskripsi{
     font-size: 24px;
     font-weight: bold;
     font-family: 'comic sans ms';
     color: #364f6b;
     padding-top: 120px;
     margin-bottom: 10px;
-    text-align: center;
+    text-align: left;
     display: block;
 }
 
-#Cources .kolom{
+#info .kolom{
     display: block;
 }
 
-#Cources h2{
+#info h2{
     font-family: 'comic sans ms';
     font-weight: 800;
     font-size: 45px;
@@ -191,7 +191,7 @@ h2{
     line-height: 50px;
 }
 
-#Cources img{
+#info img{
     width: 60%;
     float: right;
     margin: auto;
@@ -261,7 +261,7 @@ p{
 }
 
 #doctor{
-    padding-top: 220px;
+    padding-top: 50px;
     margin-top: 50px;
     margin-bottom: 50px;
     padding-bottom: 20px;
