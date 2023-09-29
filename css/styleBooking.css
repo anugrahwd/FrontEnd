@@ -49,7 +49,6 @@
 }
 
 
-/* Pada file styles.css */
 
 /* Tabel hasil booking */
 .styled-table {
@@ -74,7 +73,7 @@
     background-color: #f2f2f2;
 }
 
-.styled-table tbody tr:hover {
+.styled-table tbody th:hover {
     background-color: #ddd;
 }
 
@@ -82,3 +81,17 @@ label{
     font-family: 'comic sans ms';
 }
 
+@media screen and (max-width : 991.98px) {
+    .container{
+        max-width: 400px;
+    }
+    .input-field{
+        width: 70%;
+    }
+    .styled-table {
+        width: 20%;
+    }
+    h2{
+        font-size: 15px;
+    }
+}

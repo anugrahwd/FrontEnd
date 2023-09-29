@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booking Dokter</title>
+    <script src="https://kit.fontawesome.com/337a5740fd.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styleBooking.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -32,19 +33,19 @@
     <div class="container">
         <h2>Booking Dokter</h2>
         <form id="bookingForm" class="booking-form">
-            <label for="nama">Nama:</label>
+            <label for="nama">Name:</label>
             <input type="text" id="nama" class="input-field" required><br>
-            <label for="nomor">Nomor:</label>
+            <label for="nomor">Number:</label>
             <input type="text" id="nomor" class="input-field" required><br>
-            <label for="dokter">Pilih Dokter:</label>
+            <label for="dokter">Chose Doctor:</label>
             <select id="dokter" class="input-field" required>
                 <option value="drSmith">Dr. Smith</option>
                 <option value="drJohnson">Dr. Johnson</option>
                 <option value="drWilliams">Dr. Williams</option>
             </select><br>
-            <label for="tanggal">Tanggal:</label>
+            <label for="tanggal">Date:</label>
             <input type="date" id="tanggal" class="input-field" required><br>
-            <label for="jam">Jam:</label>
+            <label for="jam">Time:</label>
             <input type="time" id="jam" class="input-field" required><br>
             <button type="submit" class="submit-button">Booking</button>
         </form>
@@ -53,11 +54,11 @@
             <table id="hasilTabel" class="styled-table">
                 <thead>
                     <tr>
-                        <th>Nama</th>
-                        <th>Nomor</th>
-                        <th>Dokter</th>
-                        <th>Tanggal</th>
-                        <th>Jam</th>
+                        <th>Name</th>
+                        <th>Number</th>
+                        <th>Doctor</th>
+                        <th>Date</th>
+                        <th>Time</th>
                     </tr>
                 </thead>
                 <tbody> 

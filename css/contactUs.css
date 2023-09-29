@@ -64,3 +64,18 @@ button:hover {
     background-color: rgb(32, 135, 238);
     box-shadow: 1px 1px gray;
 }
+
+@media screen and (max-width : 991.98px) {
+    h2{
+        font-size: 35px;
+    }
+    .form-group input{
+        width: 300px;
+    }
+
+    .form-saran img{
+        display: none;
+    }
+
+
+}
