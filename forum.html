@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/styleForum.css">
+   
+    <title>Forum Diskusi</title>
+</head>
+<body>
+
+    <header>
+        <h1>Forum Diskusi</h1>
+       
+    </header>
+
+    <section id="forum">
+       <!-- Daftar Pesan -->
+    <div id="messages"></div>
+
+    <!-- Formulir Pesan Baru -->
+    <form id="message-form">
+        <input type="text" id="user" placeholder="Nama Anda" required>
+        <textarea id="content" placeholder="Tulis pesan Anda" required></textarea>
+        <button id="back-button">Kembali</button>
+        <button type="submit">Kirim</button>
+    </form>
+    </section>
+
+    <script src="script/scriptForum.js"></script>
+</body>
+</html>
