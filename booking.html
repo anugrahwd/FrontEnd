@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booking Dokter</title>
-    <script src="https://kit.fontawesome.com/337a5740fd.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="img/logo.png">
     <link rel="stylesheet" href="css/styleBooking.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
     <nav>
         <div class="wrapper">
             <div class="logo">
@@ -30,46 +31,82 @@
             </div>
         </div>
     </nav><br>
+
     <div class="container">
         <h2>Booking Dokter</h2>
-        <form id="bookingForm" class="booking-form">
-            <label for="nama">Name:</label>
-            <input type="text" id="nama" class="input-field" required><br>
-            <label for="nomor">Number:</label>
-            <input type="text" id="nomor" class="input-field" required><br>
-            <label for="dokter">Chose Doctor:</label>
-            <select id="dokter" class="input-field" required>
-                <option value="drSmith">Dr. Smith</option>
-                <option value="drJohnson">Dr. Johnson</option>
-                <option value="drWilliams">Dr. Williams</option>
+        <form id="bookingForm">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" class="input-field" placeholder="Input Your Name" required><br>
+
+            <label for="nomor">Nomor:</label>
+            <input type="number" id="nomor" class="input-field"  placeholder="Input Your Number" required><br>
+
+            <label for="spesialis">Pilihan Spesialis:</label>
+            <select id="spesialis" class="input-field" required>
+                <option value="#">--..--..</option>
+                <option value="Spesialis A">Spesialis A</option>
+                <option value="Spesialis B">Spesialis B</option>
+                <option value="Spesialis C">Spesialis C</option>
             </select><br>
-            <label for="tanggal">Date:</label>
+
+                        <label for="dokter">Pilihan Dokter:</label>
+            <select id="dokter" class="input-field"  required>
+                <!-- Pilihan Dokter untuk Spesialis A -->
+                <optgroup id="dokterA" label="Pilihan Dokter untuk Spesialis A">
+                    <option value="#">--..--..</option>
+                    <option value="Dokter X">Dokter X</option>
+                    <option value="Dokter Y">Dokter Y</option>
+                    <option value="Dokter Z">Dokter Z</option>
+                </optgroup>
+                <!-- Pilihan Dokter untuk Spesialis B -->
+                <optgroup id="dokterB" label="Pilihan Dokter untuk Spesialis B">
+                    <option value="#">--..--..</option>
+                    <option value="Dokter P">Dokter P</option>
+                    <option value="Dokter Q">Dokter Q</option>
+                    <option value="Dokter R">Dokter R</option>
+                </optgroup>
+                <!-- Pilihan Dokter untuk Spesialis C -->
+                <optgroup id="dokterC" label="Pilihan Dokter untuk Spesialis C">
+                    <option value="#">--..--..</option>
+                    <option value="Dokter F">Dokter F</option>
+                    <option value="Dokter G">Dokter G</option>
+                    <option value="Dokter H">Dokter H</option>
+                </optgroup>
+            </select><br>
+
+            <label for="tanggal">Tanggal Booking:</label>
             <input type="date" id="tanggal" class="input-field" required><br>
-            <label for="jam">Time:</label>
-            <input type="time" id="jam" class="input-field" required><br>
+
+            <label for="waktu">Waktu:</label>
+            <input type="time" id="waktu" class="input-field" required><br>
+
+            <label for="alamat">Alamat:</label>
+            <textarea id="alamat" class="input-field" placeholder="Input Your Address"  required></textarea><br>
+
             <button type="submit" class="submit-button">Booking</button>
         </form>
         <div id="hasilBooking" class="booking-result">
-            <h2>Result Booking</h2>
+            <h2>Hasil Booking</h2>
             <table id="hasilTabel" class="styled-table">
                 <thead>
                     <tr>
-                        <th>Name</th>
-                        <th>Number</th>
-                        <th>Doctor</th>
-                        <th>Date</th>
-                        <th>Time</th>
+                        <th>Nama</th>
+                        <th>Nomor</th>
+                        <th>Spesialis</th>
+                        <th>Dokter</th>
+                        <th>Tanggal</th>
+                        <th>Waktu</th>
+                        <th>Alamat</th>
                     </tr>
                 </thead>
-                <tbody> 
+                <tbody>
                     <!-- Data hasil booking akan ditampilkan di sini -->
                 </tbody>
             </table>
         </div>
         <button id="downloadButton" class="download-button" style="display: none;">Download PDF</button>
-        </div>
-       
     </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.0/html2pdf.bundle.min.js"></script>
     <script src="script/script.js"></script>
 </body>
